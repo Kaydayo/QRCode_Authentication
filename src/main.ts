@@ -4,6 +4,7 @@ import { ExpressAdapter, NestExpressApplication } from '@nestjs/platform-express
 import express from 'express'
 import path from 'path';
 
+require('dotenv').config();
 async function bootstrap() {
   const app = await NestFactory.create<NestExpressApplication>(AppModule);
   // app.useStaticAssets(path.join(__dirname, 'views'));
